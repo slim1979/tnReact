@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Count from './Arithmetic'
 import Greeting from './HelloWorld';
+import TodoApp from './Input';
 
 export default class caramba extends Component {
   constructor(props) {
@@ -13,10 +14,11 @@ export default class caramba extends Component {
 
   render(){
     return (
-      <div className="row">
-        <div className="col-md-12 h3">
+      <div>
+        <div className="col h1">
           <Greeting />
         </div>
+        <br />
         <div className="card">
           <div className="card-header text-center">
             Математические вычисления
@@ -50,6 +52,8 @@ export default class caramba extends Component {
             </div>
           </div>
         </div>
+        <br />
+        <TodoApp />
       </div>
     )
   }
